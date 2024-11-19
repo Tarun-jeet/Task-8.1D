@@ -1,13 +1,9 @@
-import React from 'react'
+// src/components/Label.js
+import React from 'react';
 
-export default function Label(props) {
-  return (
-        <div className="first">
-    
-        <span className="heading">{props.title}</span>
-        </div>
-    
-    
-  );
+
+function Label({ text, htmlFor }) {
+  return <label htmlFor={htmlFor}>{text}</label>;
 }
 
+export default Label;
